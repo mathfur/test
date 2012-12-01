@@ -1,4 +1,6 @@
 DeployTest::Application.routes.draw do
+  resources :entries
+
   resources :blogs
 
   resources :users
