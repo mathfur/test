@@ -4,8 +4,6 @@ desc "テキストファイルをentryにインポートする"
 task :import_from_text => :environment do
   entry_contents = YAML.load_file("import_data/aozora_to_entries.yaml")
 
-  p entry_contents
-
   ActiveRecord::Base.transaction do
     user = User.where(:name => "sample").first || User.create(:name => "sample", :age => 30)
     blog = Blog.where(:name => "sample", :user_id => user.id).first || Blog.create(:name => "sample", :user_id => user.id)
