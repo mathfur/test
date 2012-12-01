@@ -1,0 +1,10 @@
+<div id="entries_container">
+  <% @entries.each do |entry| %>
+    <div class="<%= dom_class(entry) %>" id="<%= dom_id(entry) %>">
+      <h3><%= entry.title %></h3>
+      <p>
+        <%= entry.contents[0..100] %>
+      </p>
+    </div>
+  <% end %>
+</div>

@@ -1,11 +1,13 @@
 class EntriesController < ApplicationController
+  before_filter :set_box
+
   # GET /entries
   # GET /entries.json
   def index
     @entries = Entry.all
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html { render @box ? :box : :index }
       format.json { render json: @entries }
     end
   end
@@ -79,5 +81,9 @@ class EntriesController < ApplicationController
       format.html { redirect_to entries_url }
       format.json { head :ok }
     end
+  end
+
+  def set_box
+    @box = (params[:box] == 'true')
   end
 end
