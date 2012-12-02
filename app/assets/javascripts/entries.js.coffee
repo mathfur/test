@@ -4,3 +4,13 @@
 
 $ ->
   $('#entries_container').masonry()
+  $('#entries_list').infinitescroll {
+    navSelector: '#page-nav',
+    nextSelector: '#page-nav a',
+    itemSelector: '#entries_list tr.entry',
+    loading: {
+      msgText: '...',
+      finishedMsg: '',
+      img: ''
+    }
+  }

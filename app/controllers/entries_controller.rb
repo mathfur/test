@@ -1,10 +1,11 @@
 class EntriesController < ApplicationController
   before_filter :set_box
+  before_filter :set_page
 
   # GET /entries
   # GET /entries.json
   def index
-    @entries = Entry.all
+    @entries = Entry.offset(@per_page*@page).limit(@per_page)
 
     respond_to do |format|
       format.html { render @box ? :box : :index }
@@ -85,5 +86,10 @@ class EntriesController < ApplicationController
 
   def set_box
     @box = (params[:box] == 'true')
+  end
+
+  def set_page
+    @page = params[:page].try(:to_i) || 0
+    @per_page = params[:per_page].try(:to_i) || 20
   end
 end

@@ -1,7 +1,8 @@
 <h1>Listing entries</h1>
 
-<table>
+<table id="entries_list">
   <tr>
+    <th>ID</th>
     <th>Blog</th>
     <th>Title</th>
     <th>Contents</th>
@@ -11,7 +12,8 @@
   </tr>
 
 <% @entries.each do |entry| %>
-  <tr>
+  <tr class='<%= dom_class(entry) %>' id='<%= dom_id(entry)%>'>
+    <td><%= entry.id %></td>
     <td><%= entry.blog.name %></td>
     <td><%= entry.title %></td>
     <td><%= link_to 'Show', entry %></td>
@@ -20,6 +22,10 @@
   </tr>
 <% end %>
 </table>
+
+<nav id="page-nav">
+  <%= link_to "", entries_path(:page => @page+1) %>
+</nav>
 
 <br />
 
