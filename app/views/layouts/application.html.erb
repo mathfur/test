@@ -10,7 +10,22 @@
 </head>
 <body>
 
-<%= yield %>
+<div class="ui-layout-north"><%= params[:controller] %>のページ</div>
+<div class="ui-layout-south">Copyright(c) mathfur</div>
+<div class="ui-layout-center"><%= yield %></div>
+<div class="ui-layout-west">
+  <ul>
+    <li><%= link_to_unless_current "Users", users_path %></li>
+    <li><%= link_to_unless_current "Blogs", blogs_path %></li>
+    <li><%= link_to_unless_current "Entries", entries_path %></li>
+  </ul>
+</div>
+<div class="ui-layout-east">
+<h3>備考</h3>
+<p>
+..............
+</p>
+</div>
 
 </body>
 </html>
