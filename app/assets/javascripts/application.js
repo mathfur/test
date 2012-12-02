@@ -9,6 +9,7 @@
 //= require jquery.masonry
 //= require jquery.infinitescroll
 //= require jquery.layout
+//= require jquery.pageslide
 
 $(function(){
   $('body').layout({

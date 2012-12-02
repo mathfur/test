@@ -10,10 +10,10 @@
   </tr>
 
 <% @blogs.each do |blog| %>
-  <tr>
+  <tr class='<%= dom_class(blog) %>'>
     <td><%= blog.user %></td>
     <td><%= blog.name %></td>
-    <td><%= link_to 'Show', blog %></td>
+    <td><%= link_to 'Show', blog, :class => 'show' %></td>
     <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
     <td><%= link_to 'Destroy', blog, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
