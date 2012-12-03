@@ -81,4 +81,8 @@ class UsersController < ApplicationController
       format.json { head :ok }
     end
   end
+
+  def attention
+    render layout: false
+  end
 end
