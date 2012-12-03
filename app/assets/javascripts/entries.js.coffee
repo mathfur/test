@@ -15,3 +15,4 @@ $ ->
     }
   }
   $('img.start_mark').slickWrap()
+  $('.columns').columns()
