@@ -10,6 +10,7 @@
 //= require jquery.infinitescroll
 //= require jquery.layout
 //= require jquery.pageslide
+//= require jquery.slickwrap
 
 $(function(){
   $('body').layout({

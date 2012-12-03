@@ -2,7 +2,7 @@
 
 <p>
   <b>Blog:</b>
-  <%= @entry.blog %>
+  <%= @entry.blog.name %>
 </p>
 
 <p>
@@ -12,6 +12,7 @@
 
 <p>
   <b>Contents:</b>
+  <%= image_tag "arrow.png", :class => "start_mark" %>
   <%= @entry.contents %>
 </p>
 

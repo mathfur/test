@@ -14,3 +14,4 @@ $ ->
       img: ''
     }
   }
+  $('img.start_mark').slickWrap()
