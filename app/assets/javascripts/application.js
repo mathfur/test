@@ -11,6 +11,7 @@
 //= require jquery.layout
 //= require jquery.pageslide
 //= require jquery.slickwrap
+//= require jquery.ez-pinned-footer
 
 $(function(){
   $('body').layout({
