@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DeployTest</title>
+  <%= stylesheet_link_tag    "application" %>
+  <%= stylesheet_link_tag    params[:controller],  :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag params[:controller] %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+<div id="footer">
+copyright(c) mathfur
+</div>
+
+</body>
+</html>
