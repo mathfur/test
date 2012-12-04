@@ -1,29 +1,35 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Blog:</b>
-  <%= @entry.blog.name %>
-</p>
-
-<p>
-  <b>Title:</b>
-  <%= @entry.title %>
-</p>
-
-<div class="columns">
+<% if params['enable_noisy'] %>
+  <div class='enable-noisy'>
+    <%= @entry.contents %>
+  </div>
+<% else %>
   <p>
-  <%= @entry.contents %>
+    <b>Blog:</b>
+    <%= @entry.blog.name %>
   </p>
-</div>
 
-<hr>
+  <p>
+    <b>Title:</b>
+    <%= @entry.title %>
+  </p>
 
-<p>
-  <b>Contents:</b>
-  <%= image_tag "arrow.png", :class => "start_mark" %>
-  <%= @entry.contents %>
-</p>
+  <div class="columns">
+    <p>
+    <%= @entry.contents %>
+    </p>
+  </div>
+
+  <hr>
+
+  <p>
+    <b>Contents:</b>
+    <%= image_tag "arrow.png", :class => "start_mark" %>
+    <%= @entry.contents %>
+  </p>
 
 
-<%= link_to 'Edit', edit_entry_path(@entry) %> |
-<%= link_to 'Back', entries_path %>
+  <%= link_to 'Edit', edit_entry_path(@entry) %> |
+  <%= link_to 'Back', entries_path %>
+<% end %>

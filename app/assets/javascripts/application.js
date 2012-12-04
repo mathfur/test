@@ -15,7 +15,7 @@
 //= require jquery.columns
 //= require jquery.columns
 //= require jQuery.equalHeights
-//= require extjs.noisy
+//= require jquery.noisy
 //= require filtrify
 //= require jquery.crossTable
 //= require jquery.easing

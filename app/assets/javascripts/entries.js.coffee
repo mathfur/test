@@ -19,3 +19,7 @@ $ ->
   $('table.enable-crosstable').crossTable()
   $('div.enable-vgrid').vgrid()
   $('div.enable-equal-height').equalHeights()
+  $('div.enable-noisy').noisy({
+    intensity: 50,
+    opacity: 0.5
+  }).css("background-color", "#edebde")
