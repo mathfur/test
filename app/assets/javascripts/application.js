@@ -13,6 +13,12 @@
 //= require jquery.slickwrap
 //= require jquery.ez-pinned-footer
 //= require jquery.columns
+//= require jquery.columns
+//= require af.equal-height
+//= require extjs.noisy
+//= require filtrify
+//= require jquery.crossTable
+//= require jquery.vgrid
 
 $(function(){
   $('body').layout({

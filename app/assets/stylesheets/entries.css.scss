@@ -22,3 +22,18 @@ div.entry {
 img.start_mark {
   float: left;
 }
+
+table.enable-crosstable {
+  .active {
+    background-color: #ffaaaa;
+  }
+  .hover {
+    background-color: #ccaaaa;
+  }
+  .even {
+    background-color: #aaaaaa;
+  }
+  .odd {
+    background-color: #ffffff;
+  }
+}
