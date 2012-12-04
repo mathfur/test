@@ -18,6 +18,7 @@
 //= require extjs.noisy
 //= require filtrify
 //= require jquery.crossTable
+//= require jquery.easing
 //= require jquery.vgrid
 
 $(function(){

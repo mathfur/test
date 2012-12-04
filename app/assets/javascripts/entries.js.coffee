@@ -17,3 +17,4 @@ $ ->
   $('img.start_mark').slickWrap()
   $('.columns').columns()
   $('table.enable-crosstable').crossTable()
+  $('div.enable-vgrid').vgrid()
