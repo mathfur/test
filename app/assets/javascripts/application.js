@@ -20,6 +20,8 @@
 //= require jquery.crossTable
 //= require jquery.easing
 //= require jquery.vgrid
+//= require exvalidation
+//= require exchecker-ja
 
 $(function(){
   $('body').layout({

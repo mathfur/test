@@ -23,3 +23,13 @@ $ ->
     intensity: 50,
     opacity: 0.5
   }).css("background-color", "#edebde")
+  $('form.enable-exvalidation').exValidation {
+    rules: {
+      blog_title: "chkhankaku",
+      blog_contents: "chkrequired",
+      etc: "chkrequired",
+    }
+    customAddError: ->
+      alert('失敗しました')
+    errFocus: true,
+  }

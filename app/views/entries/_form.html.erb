@@ -1,4 +1,4 @@
-<%= form_for(@entry) do |f| %>
+<%= form_for(@entry, :html => {:class => "enable-exvalidation"}) do |f| %>
   <% if @entry.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@entry.errors.count, "error") %> prohibited this entry from being saved:</h2>
@@ -11,19 +11,15 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :blog %><br />
-    <%= f.text_field :blog %>
-  </div>
-  <div class="field">
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
-  </div>
-  <div class="field">
-    <%= f.label :contents %><br />
-    <%= f.text_area :contents %>
-  </div>
-  <div class="actions">
+<table>
+  <tr class="field">
+    <td><%= f.label :title %></td><td><%= f.text_field :title, :id => "blog_title" %></td>
+  </tr>
+  <tr class="field">
+    <td><%= f.label :contents %></td><td><%= f.text_area :contents, :id => "blog_contents" %></td>
+  </tr>
+  <tr class="actions">
     <%= f.submit %>
-  </div>
+  </tr>
+</table>
 <% end %>

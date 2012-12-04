@@ -5,6 +5,7 @@
  *= require_self
  *= require jquery.pageslide
  *= require columns
+ *= require exvalidation
 */
 
 html {
