@@ -18,3 +18,4 @@ $ ->
   $('.columns').columns()
   $('table.enable-crosstable').crossTable()
   $('div.enable-vgrid').vgrid()
+  $('div.enable-equal-height').equalHeights()

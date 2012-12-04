@@ -14,7 +14,7 @@
 //= require jquery.ez-pinned-footer
 //= require jquery.columns
 //= require jquery.columns
-//= require af.equal-height
+//= require jQuery.equalHeights
 //= require extjs.noisy
 //= require filtrify
 //= require jquery.crossTable

@@ -1,9 +1,9 @@
 <h1>Listing entries</h1>
 
-<% if params[:enable_vgrid] %>
-  <div class="enable-vgrid">
+<% if params[:enable_vgrid] || params[:enable_equal_height] %>
+  <div class="<%= params[:enable_vgrid] ? 'enable-vgrid' : ''%> <%= params[:enable_equal_height] ? 'enable-equal-height' : '' %>">
     <% @entries.each do |entry| %>
-      <div class="width200">
+      <div class="width200 box">
         <h3><%= entry.title %></h3>
         <p><%= entry.contents[0..rand(200)] %></p>
       </div>
