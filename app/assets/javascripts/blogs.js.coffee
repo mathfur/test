@@ -4,3 +4,4 @@
 
 $ ->
   $('table tr.blog a.show').pageslide()
+  $('ul.megamenu').megamenu()

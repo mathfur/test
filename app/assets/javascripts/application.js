@@ -22,6 +22,7 @@
 //= require jquery.vgrid
 //= require exvalidation
 //= require exchecker-ja
+//= require jquery.megamenu
 
 $(function(){
   $('body').layout({
@@ -56,5 +57,6 @@ $(function(){
     east__spacing_closed: 30,
 
     west__size: 200,
+    north__size: 100,
   });
 })

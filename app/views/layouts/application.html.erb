@@ -10,7 +10,9 @@
 </head>
 <body>
 
-<div class="ui-layout-north"><%= params[:controller] %>のページ</div>
+<div class="ui-layout-north">
+   <%= content_for?(:header) ? yield(:header) : "#{params[:controller]}のページ" %>
+</div>
 <div class="ui-layout-south">Copyright(c) mathfur</div>
 <div class="ui-layout-center"><%= yield %></div>
 <div class="ui-layout-west">
