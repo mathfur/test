@@ -1,6 +1,13 @@
 <h1>Listing entries</h1>
 
-<% if params[:enable_vgrid] || params[:enable_equal_height] %>
+<% if params[:enable_filtrify] %>
+  <div id='placeHolder'>PLACEHOLDER</div>
+  <ul id='container_index'>
+    <% @entries.each do |entry| %>
+    <li data-genre="foo<%= entry.contents.length % 3 %>"><%= entry.title %></li>
+    <% end %>
+  </ul>
+<% elsif params[:enable_vgrid] || params[:enable_equal_height] %>
   <div class="<%= params[:enable_vgrid] ? 'enable-vgrid' : ''%> <%= params[:enable_equal_height] ? 'enable-equal-height' : '' %>">
     <% @entries.each do |entry| %>
       <div class="width200 box">

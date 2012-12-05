@@ -33,3 +33,4 @@ $ ->
       alert('失敗しました')
     errFocus: true,
   }
+  $.filtrify('container_index', 'placeHolder')
