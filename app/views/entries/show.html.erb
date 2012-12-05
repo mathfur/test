@@ -17,11 +17,21 @@
     </ul>
 	</li>
 </ul>
+<div id='hatena'></div>
 <% end %>
 
 <p id="notice"><%= notice %></p>
 
-<% if params['enable_noisy'] %>
+<% if params['enable_idtabs'] %>
+<div id='enable-idtabs'>
+  <dl class='photo'>
+   	<dt><a href="#photo1"><img src="/assets/arrow2.png" alt="" width="50" height="50" /></a></dt>
+   	<dd><img name='photo1' src="/assets/arrow2.png" alt="" width="200" height="200" id='photo1'/></dd>
+   	<dt><a href="#photo2"><img src="/assets/arrow3.png" alt="" width="50" height="50" /></a></dt>
+   	<dd><img name='photo2' src="/assets/arrow3.png" alt="" width="200" height="200" id='photo2'/></dd>
+  </dl>
+</div>
+<% elsif params['enable_noisy'] %>
   <div class='enable-noisy'>
     <%= @entry.contents %>
   </div>

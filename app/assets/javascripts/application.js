@@ -27,6 +27,8 @@
 //= require superfish
 //= require password_strength.min
 //= require jquery.tinyscrollbar
+//= require jquery.socialbutton
+//= require jquery.idTabs.min
 
 $(function(){
   $('body').layout({

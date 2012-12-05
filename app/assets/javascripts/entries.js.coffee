@@ -38,3 +38,7 @@ $ ->
     axis: 'x'
   }
   $('.sf-menu').superfish()
+  $('#hatena').socialbutton('hatena')
+  $('#enable-idtabs dl').idTabs('!mouseover')
+  $('#enable-idtabs dl a').click ->
+    return false
