@@ -34,3 +34,6 @@ $ ->
     errFocus: true,
   }
   $.filtrify('container_index', 'placeHolder')
+  $('#enable-tiny-scrollbar').tinyscrollbar {
+    axis: 'x'
+  }

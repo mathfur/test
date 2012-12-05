@@ -23,6 +23,10 @@
 //= require exvalidation
 //= require exchecker-ja
 //= require jquery.megamenu
+//= require hoverIntent
+//= require superfish
+//= require password_strength.min
+//= require jquery.tinyscrollbar
 
 $(function(){
   $('body').layout({

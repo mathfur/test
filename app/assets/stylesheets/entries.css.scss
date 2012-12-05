@@ -45,3 +45,9 @@ table.enable-crosstable {
 .enable-equal-height div{
   float: left;
 }
+
+#enable-tiny-scrollbar {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
