@@ -37,3 +37,4 @@ $ ->
   $('#enable-tiny-scrollbar').tinyscrollbar {
     axis: 'x'
   }
+  $('.sf-menu').superfish()

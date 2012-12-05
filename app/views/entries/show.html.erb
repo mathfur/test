@@ -1,3 +1,24 @@
+<% content_for :header do %>
+<ul class="sf-menu">
+  <li><a href='#'>item</a></li>
+  <li><a href='#'>item</a></li>
+  <li><a href='#'>item</a>
+    <ul>
+      <li><a href='#'>item</a></li>
+      <li><a href='#'>item</a></li>
+      <li><a href='#'>item</a></li>
+      <li><a href='#'>item</a>
+      <ul>
+        <li><a href="#">item</a></li>
+        <li><a href="#">item</a></li>
+        <li><a href="#">item</a></li>
+      </ul>
+      </li>
+    </ul>
+	</li>
+</ul>
+<% end %>
+
 <p id="notice"><%= notice %></p>
 
 <% if params['enable_noisy'] %>
