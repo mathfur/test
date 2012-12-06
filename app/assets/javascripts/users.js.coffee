@@ -7,9 +7,13 @@ $(window).resize ->
 
 $ ->
   $('#footer').pinFooter()
-
   $('#contact_form').UIElements {
     checkbox: [
       {name: 'foo[]'}
     ]
+  }
+
+  $('#user_name').after('<span class="passwordScore"></span>')
+  $('#user_name').password {
+    score: '.passwordScore'
   }
