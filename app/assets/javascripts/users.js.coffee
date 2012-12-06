@@ -2,9 +2,14 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 
+$(window).resize ->
+  $('#footer').pinFooter()
+
 $ ->
   $('#footer').pinFooter()
 
-
-$(window).resize ->
-  $('#footer').pinFooter()
+  $('#contact_form').UIElements {
+    checkbox: [
+      {name: 'foo[]'}
+    ]
+  }

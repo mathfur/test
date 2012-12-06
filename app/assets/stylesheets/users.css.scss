@@ -1,3 +1,28 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+label.UIElm-check-label{
+  display: inline-block;
+  position: relative;
+  padding-left: 32px;
+  line-height: 26px;
+}
+
+#contact_form {
+  .checkbox {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &.checked{
+      background-color: #00ff00;
+    }
+
+    &.disabled{
+      background-color: #0000ff;
+    }
+  }
+}

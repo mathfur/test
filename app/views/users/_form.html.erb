@@ -1,25 +1,12 @@
-<%= form_for(@user) do |f| %>
-  <% if @user.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
-
-      <ul>
-      <% @user.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :age %><br />
-    <%= f.number_field :age %>
-  </div>
+<%= form_for(@user, :html => {:id => 'contact_form'}) do |f| %>
+  <label for='check1'>
+    <%= check_box_tag "foo[]", "1", false, :id => 'check1' %>ITEM1
+  </label>
+  <label for='check2'>
+    <%= check_box_tag "foo[]", "2", false, :id => 'check2' %>ITEM2
+  </label>
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
+

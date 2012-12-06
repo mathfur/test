@@ -29,6 +29,7 @@
 //= require jquery.tinyscrollbar
 //= require jquery.socialbutton
 //= require jquery.idTabs.min
+//= require ui.elements
 
 $(function(){
   $('body').layout({
