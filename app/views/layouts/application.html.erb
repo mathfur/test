@@ -6,9 +6,10 @@
   <%= stylesheet_link_tag    params[:controller],  :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= javascript_include_tag params[:controller] %>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body ng-app>
 
 <div class="ui-layout-north">
    <%= content_for?(:header) ? yield(:header) : "#{params[:controller]}のページ" %>

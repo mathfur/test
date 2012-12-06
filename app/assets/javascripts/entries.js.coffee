@@ -42,3 +42,6 @@ $ ->
   $('#enable-idtabs dl').idTabs('!mouseover')
   $('#enable-idtabs dl a').click ->
     return false
+
+  @fooCtrl = ($scope) ->
+    $scope.foo = "FOO"
