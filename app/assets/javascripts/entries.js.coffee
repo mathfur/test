@@ -49,3 +49,4 @@ $ ->
   $('#accordion').accordion()
   $('#tabs').tabs()
   $('#breadCrumb').jBreadCrumb()
+  $('[title]', '#breadCrumb').tipsy()

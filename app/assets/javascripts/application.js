@@ -32,6 +32,7 @@
 //= require ui.elements
 //= require jquery-ui-1.9.2.custom
 //= require jquery.jBreadCrumb.1.1
+//= require jquery.tipsy
 
 $(function(){
   $('body').layout({
