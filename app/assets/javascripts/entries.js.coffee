@@ -50,3 +50,12 @@ $ ->
   $('#tabs').tabs()
   $('#breadCrumb').jBreadCrumb()
   $('[title]', '#breadCrumb').tipsy()
+  $('#save_time').click ->
+    t = new Date()
+    time_str = t.getMinutes() + ':'  + t.getSeconds()
+    if $.cookies.test()
+      $.cookies.set("Time.now", time_str)
+      alert("Save:" + time_str)
+  $('#load_time').click ->
+    if $.cookies.test()
+      alert("Load:"+$.cookies.get("Time.now"))
