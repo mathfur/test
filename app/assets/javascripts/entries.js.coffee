@@ -47,3 +47,4 @@ $ ->
     $scope.foo = "FOO"
 
   $('#accordion').accordion()
+  $('#tabs').tabs()

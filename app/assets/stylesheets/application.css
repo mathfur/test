@@ -9,6 +9,7 @@
  *= require exvalidation
  *= require filtrify
  *= require superfish
+ *= require jquery-ui-1.9.2.custom
 */
 
 html {
