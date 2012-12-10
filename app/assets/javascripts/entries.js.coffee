@@ -48,3 +48,4 @@ $ ->
 
   $('#accordion').accordion()
   $('#tabs').tabs()
+  $('#breadCrumb').jBreadCrumb()
