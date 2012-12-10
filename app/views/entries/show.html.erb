@@ -22,7 +22,12 @@
 
 <p id="notice"><%= notice %></p>
 
-<% if params['enable_idtabs'] %>
+<% if params['enable_highliner_jquery_plugin'] %>
+  <button id='enable_highliner'>Enable Highliner</button>
+  <div id='highliner_div'>
+    <%= @entry.contents %>
+  </div>
+<% elsif params['enable_idtabs'] %>
 <div id='enable-idtabs'>
   <dl class='photo'>
    	<dt><a href="#photo1"><img src="/assets/arrow2.png" alt="" width="50" height="50" /></a></dt>

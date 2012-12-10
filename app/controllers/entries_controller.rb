@@ -19,7 +19,11 @@ class EntriesController < ApplicationController
     @entry = Entry.find(params[:id])
 
     respond_to do |format|
-      format.html # show.html.erb
+      if params['enable_highliner_jquery_plugin']
+        format.html { render layout: 'users' }
+      else
+        format.html
+      end
       format.json { render json: @entry }
     end
   end

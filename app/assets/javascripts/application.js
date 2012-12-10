@@ -35,6 +35,7 @@
 //= require jquery.tipsy
 //= require jquery.cookies.2.2.0
 //= require jquery.droppy
+//= require jquery.highliner-0.0.2
 
 $(function(){
   $('body').layout({
