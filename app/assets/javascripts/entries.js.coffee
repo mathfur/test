@@ -45,3 +45,5 @@ $ ->
 
   @fooCtrl = ($scope) ->
     $scope.foo = "FOO"
+
+  $('#accordion').accordion()

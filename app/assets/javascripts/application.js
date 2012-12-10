@@ -30,6 +30,7 @@
 //= require jquery.socialbutton
 //= require jquery.idTabs.min
 //= require ui.elements
+//= require jquery-ui-1.9.2.custom
 
 $(function(){
   $('body').layout({

@@ -1,6 +1,14 @@
 <h1>Listing entries</h1>
 
-<% if params[:enable_filtrify] %>
+<% if params[:enable_jquery_ui_accordion] %>
+  Accordion
+  <div id="accordion">
+    <% @entries.each do |entry| %>
+    <h2><%= link_to entry.title, entry_path(entry) %></h2>
+    <div id="<%= dom_id(entry) %>"><%= entry.contents[0..200] %></div>
+    <% end %>
+  </div>
+<% elsif params[:enable_filtrify] %>
   <div id='placeHolder'>PLACEHOLDER</div>
   <ul id='container_index'>
     <% @entries.each do |entry| %>
