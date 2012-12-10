@@ -34,6 +34,7 @@
 //= require jquery.jBreadCrumb.1.1
 //= require jquery.tipsy
 //= require jquery.cookies.2.2.0
+//= require jquery.droppy
 
 $(function(){
   $('body').layout({

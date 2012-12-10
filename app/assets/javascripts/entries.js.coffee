@@ -59,3 +59,5 @@ $ ->
   $('#load_time').click ->
     if $.cookies.test()
       alert("Load:"+$.cookies.get("Time.now"))
+
+  $('#droppy_nav').droppy()
