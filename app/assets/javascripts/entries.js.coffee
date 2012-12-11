@@ -64,3 +64,7 @@ $ ->
 
   $('button#enable_highliner').click (event)->
     $.highliner(event)
+
+  $('#waypoints footer.next').waypoint((event, direction) ->
+    alert('waypoints loaded')
+  , offset: '100%')

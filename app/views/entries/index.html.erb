@@ -24,7 +24,17 @@
 <button id="save_time">SAVE TIME</button>
 <button id="load_time">LOAD TIME</button>
 
-<% if params[:enable_jquery_ui_tabs] %>
+<% if params[:enable_waypoints] %>
+  Waypoints
+  <div id="waypoints">
+    <ul>
+    <% Entry.all.each do |entry| %>
+      <li><%= entry.title %></li>
+    <% end %>
+    </ul>
+    <footer class='next'></footer>
+  </div>
+<% elsif params[:enable_jquery_ui_tabs] %>
   Tabs
   <div id="tabs">
     <ul>
