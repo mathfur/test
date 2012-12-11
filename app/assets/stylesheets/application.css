@@ -13,6 +13,7 @@
  *= require BreadCrumb
  *= require tipsy
  *= require droppy
+ *= require jquery.ferro.ferroSlider
 */
 
 html {

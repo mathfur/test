@@ -85,3 +85,4 @@ $ ->
       '#entry_190'
     ]
   }
+  $('.slideSpace').ferroSlider()

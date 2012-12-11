@@ -20,11 +20,20 @@
   <% end %>
 <% end %>
 
+<% if false %>
 <h1>Listing entries</h1>
 <button id="save_time">SAVE TIME</button>
 <button id="load_time">LOAD TIME</button>
+<% end %>
 
-<% if params[:enable_hashchange_tab] %>
+<%if params[:enable_ferroslider] %>
+  FerroSlider
+  <% @entries[10..-1].each do |entry| %>
+    <div class='slideSpace' title='<%= dom_id(entry)%>' id='<%= dom_id(entry) %>'>
+      <%= entry.contents %>
+    </div>
+  <% end %>
+<% elsif params[:enable_hashchange_tab] %>
   hashchangeTab
     <ul id="hashchangeTab">
       <% @entries[0..9].each do |entry| %>

@@ -8,7 +8,11 @@ class EntriesController < ApplicationController
     @entries = Entry.offset(@per_page*@page).limit(@per_page)
 
     respond_to do |format|
-      format.html { render @box ? :box : :index }
+      if params[:enable_ferroslider]
+        format.html { render @box ? :box : :index, layout: 'users' }
+      else
+        format.html { render @box ? :box : :index }
+      end
       format.json { render json: @entries }
     end
   end
