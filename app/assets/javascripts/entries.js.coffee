@@ -68,3 +68,20 @@ $ ->
   $('#waypoints footer.next').waypoint((event, direction) ->
     alert('waypoints loaded')
   , offset: '100%')
+
+  $().hashchangeTab {
+    nav: 'ul#hashchangeTab li',
+    currentNav: 'current',
+    tabs: [
+      '#entry_181',
+      '#entry_182',
+      '#entry_183',
+      '#entry_184',
+      '#entry_185',
+      '#entry_186',
+      '#entry_187',
+      '#entry_188',
+      '#entry_189',
+      '#entry_190'
+    ]
+  }

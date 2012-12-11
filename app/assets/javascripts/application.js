@@ -37,6 +37,8 @@
 //= require jquery.droppy
 //= require jquery.highliner-0.0.2
 //= require waypoints
+//= require hashchangeTab
+//= require jquery.ba-hashchange
 
 $(function(){
   $('body').layout({

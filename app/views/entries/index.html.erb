@@ -24,7 +24,18 @@
 <button id="save_time">SAVE TIME</button>
 <button id="load_time">LOAD TIME</button>
 
-<% if params[:enable_waypoints] %>
+<% if params[:enable_hashchange_tab] %>
+  hashchangeTab
+    <ul id="hashchangeTab">
+      <% @entries[0..9].each do |entry| %>
+        <li><a rel="#<%= dom_id(entry) %>"><%= entry.title %></a></li>
+      <% end %>
+    </ul>
+    <% @entries[0..9].each do |entry| %>
+      <div id="<%= dom_id(entry) %>"><%= entry.contents[0..300] %></div>
+    <% end %>
+  </div>
+<% elsif params[:enable_waypoints] %>
   Waypoints
   <div id="waypoints">
     <ul>
