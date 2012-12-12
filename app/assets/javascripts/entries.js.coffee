@@ -96,3 +96,6 @@ $ ->
   $('#jpages_holder').jPages {
     containerID: 'foo'
   }
+  $('#roundabout').roundabout()
+  $('#roundabout_prev').click -> trun('prev')
+  $('#roundabout_next').click -> trun('next')

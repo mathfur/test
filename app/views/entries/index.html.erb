@@ -26,7 +26,16 @@
 <button id="load_time">LOAD TIME</button>
 <% end %>
 
-<% if params[:enable_jpages] %>
+<% if params[:enable_roundabout] %>
+roundabout
+<ul id='roundabout'>
+  <% (1..10).to_a.each do |i| %>
+    <li><%= image_tag "arrow_#{i}.png", :title => "arrow_#{i}" %></li>
+  <% end %>
+</ul>
+<button id='roundabout_prev'>PREV</button>
+<button id='roundabout_next'>NEXT</button>
+<% elsif params[:enable_jpages] %>
   jPages
 <div id='jpages_holder'></div>
 <div id="jpages">

@@ -43,6 +43,7 @@
 //= require jquery.fontSizer
 //= require jQuery.radmenu
 //= require jPages
+//= require jquery.roundabout
 
 $(function(){
   $('body').layout({
