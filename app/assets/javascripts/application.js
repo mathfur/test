@@ -40,6 +40,7 @@
 //= require hashchangeTab
 //= require jquery.ba-hashchange
 //= require jquery.ferro.ferroSlider-1.2.min
+//= require jquery.fontSizer
 
 $(function(){
   $('body').layout({

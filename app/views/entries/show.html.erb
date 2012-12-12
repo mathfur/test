@@ -22,7 +22,13 @@
 
 <p id="notice"><%= notice %></p>
 
-<% if params['enable_highliner_jquery_plugin'] %>
+<% if params['enable_font_sizer'] %>
+  fontSizer
+  <div id='font_sizer_header'>
+    <p><%= @entry.contents %></p>
+    <a href="javascript:void(0)" id="fs_decrease" title="小さくする">-</a>
+  </div>
+<% elsif params['enable_highliner_jquery_plugin'] %>
   <button id='enable_highliner'>Enable Highliner</button>
   <div id='highliner_div'>
     <%= @entry.contents %>

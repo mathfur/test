@@ -86,3 +86,4 @@ $ ->
     ]
   }
   $('.slideSpace').ferroSlider()
+  $('#font_sizer_header a').fontSizer()
