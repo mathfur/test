@@ -26,7 +26,16 @@
 <button id="load_time">LOAD TIME</button>
 <% end %>
 
-<%if params[:enable_ferroslider] %>
+<% if params[:enable_radmenu] %>
+  radMenu
+<div id="radmenu">
+  <ul class='list'>
+    <% @entries[0..9].each do |entry| %>
+      <li class='item'><%= link_to entry.title, '#' %></li>
+    <% end %>
+  </ul>
+</div>
+<% elsif params[:enable_ferroslider] %>
   FerroSlider
   <% @entries[10..-1].each do |entry| %>
     <div class='slideSpace' title='<%= dom_id(entry)%>' id='<%= dom_id(entry) %>'>

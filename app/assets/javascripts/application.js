@@ -41,6 +41,7 @@
 //= require jquery.ba-hashchange
 //= require jquery.ferro.ferroSlider-1.2.min
 //= require jquery.fontSizer
+//= require jQuery.radmenu
 
 $(function(){
   $('body').layout({

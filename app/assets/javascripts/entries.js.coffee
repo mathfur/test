@@ -87,3 +87,9 @@ $ ->
   }
   $('.slideSpace').ferroSlider()
   $('#font_sizer_header a').fontSizer()
+  $('#radmenu').radmenu {
+    radius: 140,
+    centerX: 200,
+    centerY: 200,
+  }
+  $("#radmenu").radmenu("show")
