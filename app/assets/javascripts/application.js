@@ -42,6 +42,7 @@
 //= require jquery.ferro.ferroSlider-1.2.min
 //= require jquery.fontSizer
 //= require jQuery.radmenu
+//= require jPages
 
 $(function(){
   $('body').layout({

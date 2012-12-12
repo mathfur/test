@@ -93,3 +93,6 @@ $ ->
     centerY: 200,
   }
   $("#radmenu").radmenu("show")
+  $('#jpages_holder').jPages {
+    containerID: 'foo'
+  }

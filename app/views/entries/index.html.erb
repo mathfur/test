@@ -26,7 +26,17 @@
 <button id="load_time">LOAD TIME</button>
 <% end %>
 
-<% if params[:enable_radmenu] %>
+<% if params[:enable_jpages] %>
+  jPages
+<div id='jpages_holder'></div>
+<div id="jpages">
+  <ul id='foo'>
+    <% (1..50).to_a.each do |i| %>
+      <li style='float:left'><a href='#arrow_<%=i%>'><%= image_tag "arrow_#{i}.png", :alt => "arrow_#{i}" %></a></li>
+    <% end %>
+  </ul>
+</div>
+<% elsif params[:enable_radmenu] %>
   radMenu
 <div id="radmenu">
   <ul class='list'>
