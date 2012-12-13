@@ -99,3 +99,6 @@ $ ->
   $('#roundabout').roundabout()
   $('#roundabout_prev').click -> trun('prev')
   $('#roundabout_next').click -> trun('next')
+  $.autopager {
+    link   : '#autopager_next'
+  }

@@ -72,12 +72,13 @@
 
   <hr>
 
-  <p>
+  <p class='contents'>
     <b>Contents:</b>
     <%= image_tag "arrow.png", :class => "start_mark" %>
     <%= @entry.contents %>
   </p>
 
+  <a href='/entries/200' rel='next'>NEXT</a>
 
   <%= link_to 'Edit', edit_entry_path(@entry) %> |
   <%= link_to 'Back', entries_path %>

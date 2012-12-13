@@ -44,6 +44,7 @@
 //= require jQuery.radmenu
 //= require jPages
 //= require jquery.roundabout
+//= require jquery.autopager-1.0.0
 
 $(function(){
   $('body').layout({
